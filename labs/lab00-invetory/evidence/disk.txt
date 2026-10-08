@@ -1,0 +1,42 @@
+kloyn@kloyn-magicbook:~$ df -hT
+Filesystem     Type      Size  Used Avail Use% Mounted on
+tmpfs          tmpfs     3.0G  3.5M  3.0G   1% /run
+/dev/nvme0n1p2 ext4      468G  207G  237G  47% /
+tmpfs          tmpfs     7.5G   12K  7.5G   1% /dev/shm
+efivarfs       efivarfs  268K  225K   39K  86% /sys/firmware/efi/efivars
+none           tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none           tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+/dev/nvme0n1p1 vfat      1.1G  6.4M  1.1G   1% /boot/efi
+tmpfs          tmpfs     7.5G   12K  7.5G   1% /tmp
+tmpfs          tmpfs     1.5G  4.1M  1.5G   1% /run/user/1000
+kloyn@kloyn-magicbook:~$ lsblk -d -o NAME,MODEL,ROTA,TRAN
+NAME    MODEL              ROTA TRAN
+loop0                         0 
+loop1                         0 
+loop2                         0 
+loop3                         0 
+loop4                         0 
+loop5                         0 
+loop6                         0 
+loop7                         0 
+loop8                         0 
+loop9                         0 
+loop10                        0 
+loop11                        0 
+loop12                        0 
+loop13                        0 
+loop14                        0 
+loop15                        0 
+loop16                        0 
+loop17                        0 
+loop18                        0 
+loop19                        0 
+loop20                        0 
+loop21                        0 
+loop22                        0 
+loop23                        0 
+loop24                        0 
+loop25                        0 
+loop26                        0 
+loop27                        0 
+nvme0n1 YMTC PC411-512GB-B    0 nvme
