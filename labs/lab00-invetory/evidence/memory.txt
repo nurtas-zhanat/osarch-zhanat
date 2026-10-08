@@ -1,3 +1,9 @@
+kloyn@kloyn-magicbook:~$ free -m
+               total        used        free      shared  buff/cache   available
+Mem:           15199        4965        6755        1412        4085       10233
+Swap:           4095           0        4095
+
+
 kloyn@kloyn-magicbook:~$ sudo dmidecode --type 17
 [sudo: authenticate] Password:           
 # dmidecode 3.6
