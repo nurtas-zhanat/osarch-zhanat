@@ -1,4 +1,5 @@
-``` # Lab 0 - Inventory your own machine
+```
+# Lab 0 - Inventory your own machine
 ## Zhanat Nurtas CYB26-6
 ### CPU Info 
 +--------------+--------------------------------------+--------------------------+
