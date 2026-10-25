@@ -5,6 +5,7 @@ Pair: Zhanat Nurtas / Ibraeva Nursaya
 Driver first half: Zhanat Nurtas
 
 Machine: Honor Magicbook X14, Ubuntu Desktop 26.04.1, guest Ubuntu Server 26.04.1
+
 Date: 25.10.2026
 
 ## What I did
