@@ -1,7 +1,8 @@
 
 # Lab 1 — Your first virtual machine
 
-Pair: Zhanat Nurtas / Ibraeva Nursaya   Driver first half: Nurtas
+Pair: Zhanat Nurtas / Ibraeva Nursaya   
+Driver first half: Nurtas
 Machine: Honor Magicbook X14, Ubuntu Desktop 26.04.1, guest Ubuntu Server 26.04.1
 Date: 25.10.2026
 
