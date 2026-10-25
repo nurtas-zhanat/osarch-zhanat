@@ -1,0 +1,47 @@
+kloyn@kloyn-magicbook:~$ [ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS"
+UEFI
+kloyn@kloyn-magicbook:~$ sudo dmidecode -s bios-version
+[sudo: authenticate] Password:           
+1.05
+kloyn@kloyn-magicbook:~$ sudo dmidecode -s bios-release-date
+03/16/2025
+kloyn@kloyn-magicbook:~$ sudo dmidecode -s bios-vendor
+HONOR
+kloyn@kloyn-magicbook:~$ sudo dmidecode -t bios
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 3.4 present.
+
+Handle 0x0000, DMI type 0, 26 bytes
+BIOS Information
+	Vendor: HONOR
+	Version: 1.05
+	Release Date: 03/16/2025
+	Address: 0xE0000
+	Runtime Size: 128 kB
+	ROM Size: 8 MB
+	Characteristics:
+		PCI is supported
+		PNP is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		EDD is supported
+		ACPI is supported
+		USB legacy is supported
+		Smart battery is supported
+		BIOS boot specification is supported
+		Targeted content distribution is supported
+		UEFI is supported
+	BIOS Revision: 1.5
+	Firmware Revision: 1.5
+
+Handle 0x0013, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Long
+	Installable Languages: 2
+		en|US|iso8859-1,0
+		zh|CN|unicode,0
+	Currently Installed Language: en|US|iso8859-1,0
+
