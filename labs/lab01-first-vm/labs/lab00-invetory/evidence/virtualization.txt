@@ -1,2 +1,0 @@
-kloyn@kloyn-magicbook:~$ lscpu | grep Virtualization
-Virtualization:                          VT-x
