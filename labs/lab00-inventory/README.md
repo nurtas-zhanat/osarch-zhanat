@@ -7,7 +7,7 @@
 |---|---|---|
 | CPU model | 12th Gen Intel(R) Core(TM) i5-12450H | `lscpu`, `cpu.txt` line 9 |
 | Core count | 8 | `cpu.txt` line 13 |
-| Thread count | 12 | `cpu.txt`, 2 threads per core, line 12 |
+| Thread count | 12 | `cpu.txt`, 4 cores with 2 threads, 4 cores with 1 thread , line 12 |
 
 ### Memory info
 
