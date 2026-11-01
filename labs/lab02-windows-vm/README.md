@@ -11,7 +11,8 @@ Date: 1.11.2026
 1. Downloaded Windows 11 Enterprise evaluation. Licence: [<Evaluation Center link>](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise)
 2. Created lab02-windows: 2 vCPU, 4 GB, 64 GB thin, UEFI + Secure Boot, vTPM.
 3. Network mode: NAT Network, both guests. Why: Because that's the way host and both guests can interact with each other while having connection to the internet
-4. Ping Ubuntu → Windows timed out because <why>. Fixed with: <the firewall rule command>
+4. Ping Ubuntu → Windows timed out because firewall was blocking pings. Fixed with: New-NetFirewallRule -DisplayName "Allow ping in (ICMPv4)" -Protocol ICMPv4 -IcmpType 8 -Direction Inbound -Action Allow
+
 5. Overcommitment: set 10 GB + 10 GB on a 16 GB host.
 
 ## Network diagram
