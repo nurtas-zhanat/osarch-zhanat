@@ -2,17 +2,17 @@
 
 Pair: Nurtas / Nursaya   Driver first half: Nurtas
 Machine: Honor Magicbook X14, Linux Fedora, RAM, cores>, guests Ubuntu Server + Windows 11 Enterprise eval
-Date: <1.11.2026>
+Date: 1.11.2026
 
 ## What I did
 1. Downloaded Windows 11 Enterprise evaluation. Licence: [<Evaluation Center link>](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise)
 2. Created lab02-windows: 2 vCPU, 4 GB, 64 GB thin, UEFI + Secure Boot, vTPM.
 3. Network mode: NAT Network, both guests. Why: Because that's the way host and both guests can interact with each other while having connection to the internet
 4. Ping Ubuntu → Windows timed out because <why>. Fixed with: <the firewall rule command>
-5. Overcommitment: set <x> GB + <y> GB on a <z> GB host.
+5. Overcommitment: set 10 GB + 10 GB on a 16 GB host.
 
 ## Network diagram
-
+```
               Internet
                  |
       Host laptop 192.168.1.207
@@ -21,7 +21,7 @@ Date: <1.11.2026>
           /                        \
 lab01-ubuntu                  lab02-windows
 10.0.2.3                      10.0.2.15
-
+```
 ## Result
 | | Before | After |
 |---|---|---|
