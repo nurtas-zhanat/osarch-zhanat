@@ -50,4 +50,6 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 rtt min/avg/max/mdev = 80.788/81.817/82.306/0.600 ms
 
 
-Pinged 8.8.8.8 instead of ubuntu.com. The goal of pinging ubuntu.com is answering whether the VM has internet connection. Since ubuntu.com doesn't answer (even from my host) i pinged 8.8.8.8 which also requires internet connection to properly ping
+Pinged 8.8.8.8 instead of ubuntu.com. 
+The goal of pinging ubuntu.com is answering whether the VM has internet connection. 
+Since ubuntu.com doesn't answer (even from my host) i pinged 8.8.8.8 which also requires internet connection to properly ping
