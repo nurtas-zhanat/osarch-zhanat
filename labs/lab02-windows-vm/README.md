@@ -1,7 +1,10 @@
 # Lab 2 — A Windows guest, and a network between them
 
-Pair: Nurtas / Nursaya   Driver first half: Nurtas
-Machine: Honor Magicbook X14, Linux Fedora, RAM, cores>, guests Ubuntu Server + Windows 11 Enterprise eval
+Pair: Nurtas / Nursaya   
+Driver first half: Nurtas
+
+Machine: Honor Magicbook X14, Linux Fedora, 16  GB, 8 cores>, guests Ubuntu Server + Windows 11 Enterprise eval
+
 Date: 1.11.2026
 
 ## What I did
