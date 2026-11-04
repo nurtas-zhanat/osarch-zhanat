@@ -110,18 +110,12 @@ Files marked ★ are the six named in the ticket. Screenshots with a `steps/` pr
 
 | File | What it proves |
 |---|---|
-| `evidence/00-host-check.txt` | The host's CPU, RAM, disk and virtualization status, from the command line. |
 | ★ `evidence/01-new-vm-wizard.png` | VM creation settings for the Linux guest. |
 | ★ `evidence/02-disk-settings.png` | The virtual disk size and type as configured. |
 | ★ `evidence/03-network-adapter.png` | Adapter attached to the NAT Network `osarch-net`. |
 | ★ `evidence/04-guest-uname.txt` | Output of `lsb_release -a` and `uname -a` inside the Linux guest. |
 | ★ `evidence/05-ping-between-guests.txt` | Ping works Linux → Windows and Windows → Linux. |
 | ★ `evidence/06-snapshot-list.png` | The `clean-install` snapshot exists, after the rollback. |
-| `evidence/07-ipconfig-windows.txt` | The Windows guest's address on `10.0.50.0/24`. |
-| `evidence/08-ip-addr-linux.txt` | The Linux guest's address on the same network. |
-| `evidence/09-memory-before.txt`, `evidence/10-memory-after.txt` | Host memory, swap and pressure before and after promising the guests more than the host has. |
-| `evidence/steps/s01 … s16` | One screenshot per stage in BUILD.md (virtualization, installers, firewall, memory before/after, hostname broken). |
-| `review/feedback-from-<surname>.md` | *(Added in week 5)* The first step where a peer got stuck following BUILD.md literally. |
 
 ## 5. What I would do differently
 
