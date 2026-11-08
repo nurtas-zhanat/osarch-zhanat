@@ -1,0 +1,35 @@
+PS C:\WINDOWS\system32> Get-CimInstance Win32_Processor | Select Name
+
+Name
+----
+12th Gen Intel(R) Core(TM) i5-12450H
+
+
+PS C:\WINDOWS\system32> Get-CimInstance Win32_Processor | Select NumberOfCores, NumberOfLogicalProcessors
+
+NumberOfCores NumberOfLogicalProcessors
+------------- -------------------------
+            2                         2
+
+
+PS C:\WINDOWS\system32> Get-CimInstance Win32_PhysicalMemory | Select Capacity
+PS C:\WINDOWS\system32> Get-CimInstance Win32_PhysicalMemory | Select DeviceLocator, Capacity, Speed, ConfiguredClockSpeed, SMBIOSMemoryType, FormFactor
+The commands don't output anything since the hypervisor hides virtual memory modules
+
+
+PS C:\WINDOWS\system32> Get-PhysicalDisk | Select FriendlyName, MediaType, BusType, Size
+
+FriendlyName  MediaType   BusType        Size
+------------  ---------   -------        ----
+VBOX HARDDISK Unspecified SATA    85899345920  
+
+
+PS C:\WINDOWS\system32> Get-Volume C
+
+DriveLetter FriendlyName FileSystemType DriveType HealthStatus OperationalStatus SizeRemaining     Size
+----------- ------------ -------------- --------- ------------ ----------------- -------------     ----
+C                        NTFS           Fixed     Healthy      OK                     59.92 GB 79.26 GB
+
+
+PS C:\WINDOWS\system32> $env:PROCESSOR_ARCHITECTURE
+AMD64 

@@ -1,0 +1,365 @@
+koldyn@koldyn:~/studying/osarch-zhanat/labs/lab03-teardown/evidence$ lscpu > linux-specs.txt
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           39 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  12
+On-line CPU(s) list:                     0-11
+Vendor ID:                               GenuineIntel
+Model name:                              12th Gen Intel(R) Core(TM) i5-12450H
+CPU family:                              6
+Model:                                   154
+Thread(s) per core:                      2
+Core(s) per socket:                      8
+Socket(s):                               1
+Stepping:                                3
+CPU(s) scaling MHz:                      15%
+CPU max MHz:                             4400.0000
+CPU min MHz:                             400.0000
+BogoMIPS:                                4992.00
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+Virtualization:                          VT-x
+L1d cache:                               320 KiB (8 instances)
+L1i cache:                               384 KiB (8 instances)
+L2 cache:                                7 MiB (5 instances)
+L3 cache:                                12 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-11
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Mitigation; Clear Register File
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspace
+
+koldyn@koldyn:~/studying/osarch-zhanat/labs/lab03-teardown/evidence$ free -h >> linux-specs.txt
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       6.6Gi       4.5Gi       1.5Gi       6.8Gi       8.7Gi
+Swap:           31Gi       1.7Gi        29Gi
+
+koldyn@koldyn:~/studying/osarch-zhanat/labs/lab03-teardown/evidence$ sudo dmidecode -t memory >> linux-specs.txt
+# dmidecode 3.5
+Getting SMBIOS data from sysfs.
+SMBIOS 3.4 present.
+
+Handle 0x0015, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 16 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 8
+
+Handle 0x0016, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0015
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: Row Of Chips
+	Set: None
+	Locator: ChannelA-DIMM0
+	Bank Locator: BANK 0
+	Type: LPDDR4
+	Type Detail: Synchronous
+	Speed: 4267 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 00000000
+	Asset Tag: 9876543210
+	Part Number: MT53E1G32D2NP-046 W 
+	Rank: 2
+	Configured Memory Speed: 4266 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 0.6 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 2 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0017, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0015
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: Row Of Chips
+	Set: None
+	Locator: ChannelB-DIMM0
+	Bank Locator: BANK 1
+	Type: LPDDR4
+	Type Detail: Synchronous
+	Speed: 4267 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 00000000
+	Asset Tag: 9876543210
+	Part Number: MT53E1G32D2NP-046 W 
+	Rank: 2
+	Configured Memory Speed: 4266 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 0.6 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 2 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0018, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0015
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: Row Of Chips
+	Set: None
+	Locator: ChannelC-DIMM0
+	Bank Locator: BANK 2
+	Type: LPDDR4
+	Type Detail: Synchronous
+	Speed: 4267 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 00000000
+	Asset Tag: 9876543210
+	Part Number: MT53E1G32D2NP-046 W 
+	Rank: 2
+	Configured Memory Speed: 4266 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 0.6 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 2 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0019, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0015
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: Row Of Chips
+	Set: None
+	Locator: ChannelD-DIMM0
+	Bank Locator: BANK 3
+	Type: LPDDR4
+	Type Detail: Synchronous
+	Speed: 4267 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 00000000
+	Asset Tag: 9876543210
+	Part Number: MT53E1G32D2NP-046 W 
+	Rank: 2
+	Configured Memory Speed: 4266 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 0.6 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 2 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x001A, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0015
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: Row Of Chips
+	Set: None
+	Locator: ChannelA-DIMM1
+	Bank Locator: BANK 0
+	Type: LPDDR4
+	Type Detail: Synchronous
+	Speed: 4267 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 00000000
+	Asset Tag: 9876543210
+	Part Number: MT53E1G32D2NP-046 W 
+	Rank: 2
+	Configured Memory Speed: 4266 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 0.6 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 2 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x001B, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0015
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: Row Of Chips
+	Set: None
+	Locator: ChannelB-DIMM1
+	Bank Locator: BANK 1
+	Type: LPDDR4
+	Type Detail: Synchronous
+	Speed: 4267 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 00000000
+	Asset Tag: 9876543210
+	Part Number: MT53E1G32D2NP-046 W 
+	Rank: 2
+	Configured Memory Speed: 4266 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 0.6 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 2 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x001C, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0015
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: Row Of Chips
+	Set: None
+	Locator: ChannelC-DIMM1
+	Bank Locator: BANK 2
+	Type: LPDDR4
+	Type Detail: Synchronous
+	Speed: 4267 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 00000000
+	Asset Tag: 9876543210
+	Part Number: MT53E1G32D2NP-046 W 
+	Rank: 2
+	Configured Memory Speed: 4266 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 0.6 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 2 GB
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x001D, DMI type 17, 92 bytes
+Memory Device
+	Array Handle: 0x0015
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2 GB
+	Form Factor: Row Of Chips
+	Set: None
+	Locator: ChannelD-DIMM1
+	Bank Locator: BANK 3
+	Type: LPDDR4
+	Type Detail: Synchronous
+	Speed: 4267 MT/s
+	Manufacturer: Micron Technology
+	Serial Number: 00000000
+	Asset Tag: 9876543210
+	Part Number: MT53E1G32D2NP-046 W 
+	Rank: 2
+	Configured Memory Speed: 4266 MT/s
+	Minimum Voltage: Unknown
+	Maximum Voltage: Unknown
+	Configured Voltage: 0.6 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: Volatile memory
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 1, Hex 0x2C
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: 2 GB
+	Cache Size: None
+	Logical Size: None
+
+
+koldyn@koldyn:~/studying/osarch-zhanat/labs/lab03-teardown/evidence$ lsblk -d -o NAME,MODEL,ROTA,TRAN,SIZE >> linux-specs.txt
+NAME    MODEL              ROTA TRAN     SIZE
+loop0                         0            4K
+loop1                         0         66.8M
+loop2                         0          616M
+loop3                         0         91.7M
+loop4                         0          402M
+loop5                         0        111.7M
+loop6                         0         44.7M
+zram0                         0         15.3G
+nvme0n1 YMTC PC411-512GB-B    0 nvme   476.9G
+
+koldyn@koldyn:~/studying/osarch-zhanat/labs/lab03-teardown/evidence$ df -h / >> linux-specs.txt
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p7  344G  148G  179G  46% /
+
+koldyn@koldyn:~/studying/osarch-zhanat/labs/lab03-teardown/evidence$ uname -m >> linux-specs.txt
+x86_64
