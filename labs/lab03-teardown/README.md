@@ -63,7 +63,7 @@ Source: https://www.corsair.com/us/en/p/psu/cp-9020295-na/rme-series-rm750e-full
 ### 10. Stock cooler (AMD Wraith Stealth, boxed with the Ryzen 5 7600)
 ![Wraith Stealth cooler](evidence/photos/wraith-stealth.png)
 
-**What it is:** the small air cooler that ships in the box with the Ryzen 5 7600. **Connects to:** the AM5 socket mounting holes, with a fan header on the board for power. **Limit:** heat removal; it is designed for a 65 W processor and cannot be mounted on an LGA1700 socket, so it cannot be used on the Intel build. **(verify: check on intel.com whether the boxed i5-13400 includes its own cooler; I believe it does, the Intel Laminar RM1.)**
+**What it is:** the small air cooler that ships in the box with the Ryzen 5 7600. **Connects to:** the AM5 socket mounting holes, with a fan header on the board for power. **Limit:** heat removal; it is designed for a 65 W processor and cannot be mounted on an LGA1700 socket, so it cannot be used on the Intel build.
 Source: https://www.amd.com/en/products/processors/ecosystem/cpu-cooler-solutions.html
 
 ---
@@ -130,7 +130,7 @@ Nobody from our pair has a MacOS machine
 
 ### What the output showed
 
-**How the names differ.** The same fact has different names on each system: logical processors are `NumberOfLogicalProcessors` on Windows, `CPU(s)` in `lscpu`. The architecture is spelled `AMD64` on Windows, `x86_64` on Linux, and `arm64`. Windows reports memory size in bytes, and its memory type is a number (`SMBIOSMemoryType`: 26 means DDR4, 34 means DDR5), while `dmidecode` prints the type and speed as text, in MT/s.
+**How the names differ.** The same fact has different names on each system: logical processors are `NumberOfLogicalProcessors` on Windows, `CPU(s)` in `lscpu`. The architecture is spelled `AMD64` on Windows, `x86_64` on Linux. Windows reports memory size in bytes, and its memory type is a number (`SMBIOSMemoryType`: 26 means DDR4, 34 means DDR5), while `dmidecode` prints the type and speed as text, in MT/s.
 
 **What the VM showed differently from the host.** Windows VM doesn't show memory data because the supervisor hides it. `lscpu` in the VM shows the number of CPUs I assigned in VirtualBox/VMware (`<N>`), not the host's real count, and lists a "Hypervisor vendor" line. `lsblk` shows `<disk model, e.g. VBOX HARDDISK>` on `<sda / nvme0n1>` instead of my real SSD. 
 
