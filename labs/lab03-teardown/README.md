@@ -109,7 +109,7 @@ Rule used: match by socket, then memory type, then storage connection. Brand did
 ### What each build still needs
 
 - **Build 1 (AMD):** a power supply (the only one went to Build 2), a case, a keyboard, a monitor and an operating system. No graphics card is required because the Ryzen 5 7600 has integrated graphics. Also needs a SATA-free design check: the 990 PRO needs no cables at all.
-- **Build 2 (Intel):** a case with a 2.5″ drive bay, a SATA data cable (usually in the motherboard box), a keyboard, a monitor and an operating system. Cooling comes from the cooler in the i5-13400 box if the maker's page confirms it ships with one **(verify)**; otherwise it needs a separate LGA1700 cooler.
+- **Build 2 (Intel):** a case with a 2.5″ drive bay, a SATA data cable (usually in the motherboard box), a keyboard, a monitor and an operating system. Cooling comes from the cooler in the i5-13400 box if the maker's page confirms it ships with one; otherwise it needs a separate LGA1700 cooler.
 - **Both:** only one PSU, one stock cooler, and no case, display or peripherals were in the ten parts, so neither build can be switched on as is.
 
 ---
