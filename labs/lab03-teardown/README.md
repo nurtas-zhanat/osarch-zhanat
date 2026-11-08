@@ -147,6 +147,6 @@ Example shape (replace with your own, do not copy):
 
 ## Evidence
 
-- `evidence/photos/` — maker photos or screenshots, one per part (10 files).
-- `evidence/windows-specs.txt` — each PowerShell command above its output.
-- `evidence/linux-specs.txt` — each Linux command above its output, from real hardware.
+- [evidence/photos/](evidence/photos/) — maker photos or screenshots, one per part (10 files).
+- [evidence/windows-specs.txt](evidence/windows-specs.txt) — each PowerShell command above its output.
+- [evidence/linux-specs.txt](evidence/linux-specs.txt) — each Linux command above its output, from real hardware.
