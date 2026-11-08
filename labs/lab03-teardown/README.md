@@ -84,8 +84,6 @@ Source: https://www.amd.com/en/products/processors/ecosystem/cpu-cooler-solution
 
 ## Two builds
 
-Rule used: match by socket, then memory type, then storage connection. Brand did not decide anything.
-
 ### Build 1 — AMD
 
 | Part | Model | Why it fits here |
@@ -138,7 +136,6 @@ Nobody from our pair has a MacOS machine
 
 ## What did not work the first time
 
-Example shape (replace with your own, do not copy):
 - I saw Windows VM showed nothing when I ran - Get-CimInstance Win32_PhysicalMemory | Select Capacity.
 - It was because hypervisor hides memory modules.
 - I decided that it doesn't need a fix. The command did what it was told to do, show the memory modules and information about it. It had none, so it showed nothing.
