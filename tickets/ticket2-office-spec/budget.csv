@@ -1,0 +1,43 @@
+ ,component,model,price_kzt,source,date
+sales,CPU,Intel Core i3-12100,59999,https://kaspi.kz/shop/p/intel-sore-i3-12100-oem-104110362/?c=750000000,2026-11-23
+sales,Cooler,ID-COOLING SE-802-SD V3,3730,https://kaspi.kz/shop/p/kuler-id-cooling-se-802-sd-v3-113735724/?c=750000000,2026-11-23
+sales,Motherboard,ASUS Prime H610M-K D4,43500,https://kaspi.kz/shop/p/asus-prime-h610m-k-d4-104163589/?c=750000000,2026-11-23
+sales,Memory,Kingston Fury Beast KF432C16BB 8GB x 2,97998,https://kaspi.kz/shop/p/kingston-fury-beast-kf432c16bb-8-8-gb-101900318/?c=750000000,2026-11-23
+sales,Storage,Kingston NV3 1TB NVMe SSD (SNV3S/1000G),82299,https://kaspi.kz/shop/p/ssd-kingston-snv3s-1000g-1000-gb-123793481/?c=750000000,2026-11-23
+sales,Power Supply,Deepcool PF550 R-PF550D-HA0B-EU,22290,https://kaspi.kz/shop/p/deepcool-pf550-r-pf550d-ha0b-eu-550-vt-104151899/?c=750000000,2026-11-23
+sales,Case,COUGAR MX110 RGB 382BD20.0001,19869,https://kaspi.kz/shop/p/cougar-mx110-rgb-382bd20-0001-chernyi-137252770/?c=750000000,2026-11-23
+sales,Monitor,"21.5"" AOC 22B15H2/01",38990,https://kaspi.kz/shop/p/21-5-aoc-22b15h2-01-chernyi-166324590/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_car_motorcycle_gear_v2&gclid=CjwKCAiA5Y_YBhBbEiwAK5Dl7SlNEIsIhJpAtuI7G1JGMw3S3SiZvFxw4NRbFkwtnVxF17aIEWD50hoCUyYQAvD_BwE,2026-11-23
+sales,OS,Windows 11 Pro,60000,https://kaspi.kz/shop/p/microsoft-windows-11-pro-64-bit-144883085/?c=750000000,
+sales,TOTAL,,=SUM(D2:D10),,2026-11-23
+accountant,CPU,Intel Core i5-12400,81000,https://kaspi.kz/shop/p/intel-core-i5-12400-oem-103650843/?c=750000000,2026-11-23
+accountant,Cooler,ID-COOLING SE-802-SD V3,3730,https://kaspi.kz/shop/p/kuler-id-cooling-se-802-sd-v3-113735724/?c=750000000,2026-11-23
+accountant,Motherboard,MSI PRO B760M-P DDR4,54900,https://kaspi.kz/shop/p/msi-pro-b760m-p-ddr4-109773845/?c=750000000,2026-11-23
+accountant,Memory,Kingston Fury Beast KF432C16BB 8GB x 2,97998,https://kaspi.kz/shop/p/kingston-fury-beast-kf432c16bb-8-8-gb-101900318/?c=750000000,2026-11-23
+accountant,Storage,Kingston NV3 1TB NVMe SSD (SNV3S/1000G),82299,https://kaspi.kz/shop/p/ssd-kingston-snv3s-1000g-1000-gb-123793481/?c=750000000,2026-11-23
+accountant,Power Supply,Deepcool PF550 R-PF550D-HA0B-EU,22290,https://kaspi.kz/shop/p/deepcool-pf550-r-pf550d-ha0b-eu-550-vt-104151899/?c=750000000,2026-11-23
+accountant,Case,COUGAR MX110 RGB 382BD20.0001,19869,https://kaspi.kz/shop/p/cougar-mx110-rgb-382bd20-0001-chernyi-137252770/?c=750000000,2026-11-23
+accountant,Monitor,"21.5"" AOC 22B15H2/01",38990,https://kaspi.kz/shop/p/21-5-aoc-22b15h2-01-chernyi-166324590/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_car_motorcycle_gear_v2&gclid=CjwKCAiA5Y_YBhBbEiwAK5Dl7SlNEIsIhJpAtuI7G1JGMw3S3SiZvFxw4NRbFkwtnVxF17aIEWD50hoCUyYQAvD_BwE,
+accountant,OS,Windows 11 Pro,60000,https://kaspi.kz/shop/p/microsoft-windows-11-pro-64-bit-144883085/?c=750000000,2026-11-23
+accountant,TOTAL,,=SUM(D12:D20),,2026-11-23
+web developer,CPU,Intel Core i5-13400,83980,https://kaspi.kz/shop/p/intel-core-i5-13400-oem-108437894/?c=750000000,2026-11-23
+web developer,Cooler,Deepcool AK400,22641,https://kaspi.kz/shop/p/deepcool-ak400-g2-digital-nyx-r-ak400g2-bknnmn-gjd-1--152748909/?c=750000000,2026-11-23
+web developer,Motherboard,Gigabyte B760M DS3H DDR4,60890,https://kaspi.kz/shop/p/gigabyte-b760m-ds3h-ddr4-108631106/?c=750000000,2026-11-23
+web developer,Memory,Kingston KF432C16BB1 16GB x 2,159996,https://kaspi.kz/shop/p/kingston-kf432c16bb1-16-16-gb-101883804/?c=750000000,2026-11-23
+web developer,Storage,Kingston NV3 1TB NVMe SSD (SNV3S/1000G),82299,https://kaspi.kz/shop/p/ssd-kingston-snv3s-1000g-1000-gb-123793481/?c=750000000,2026-11-23
+web developer,Power Supply,Deepcool PN750М,62049,https://kaspi.kz/shop/p/deepcool-pn750m-750-vt-119298775/?c=750000000,2026-11-23
+web developer,Case,COUGAR MX110 RGB 382BD20.0001,19869,https://kaspi.kz/shop/p/cougar-mx110-rgb-382bd20-0001-chernyi-137252770/?c=750000000,2026-11-23
+web developer,Monitor,"21.5"" AOC 22B15H2/01",38990,https://kaspi.kz/shop/p/21-5-aoc-22b15h2-01-chernyi-166324590/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_car_motorcycle_gear_v2&gclid=CjwKCAiA5Y_YBhBbEiwAK5Dl7SlNEIsIhJpAtuI7G1JGMw3S3SiZvFxw4NRbFkwtnVxF17aIEWD50hoCUyYQAvD_BwE,
+web developer,OS,Ubuntu 26.04.1 LTS (Licensed Free Commercial Desktop),0,https://ubuntu.com/download/desktop,2026-11-23
+web developer,TOTAL,,=SUM(D22:D30),,2026-11-23
+designer,CPU,Intel Core i5-14600KF,113840,https://kaspi.kz/shop/p/intel-core-i5-14600kf-oem-114335032/?c=750000000,2026-11-23
+designer,Cooler,Deepcool AK620,31099,https://kaspi.kz/shop/p/deepcool-ak620-103960408/?c=750000000,2026-11-23
+designer,Motherboard,ASUS PRIME B760-PLUS D4,80010,https://kaspi.kz/shop/p/asus-prime-b760-plus-d4-108951187/?c=750000000,2026-11-23
+designer,Memory,Kingston KF432C16BB1 16GB x 2,159996,https://kaspi.kz/shop/p/kingston-kf432c16bb1-16-16-gb-101883804/?c=750000000,2026-11-23
+designer,Storage,Kingston NV3 1TB NVMe SSD (SNV3S/1000G),82299,https://kaspi.kz/shop/p/ssd-kingston-snv3s-1000g-1000-gb-123793481/?c=750000000,2026-11-23
+designer,GPU,MSI RTX 5050 8G VENTUS 2X,249900,https://kaspi.kz/shop/p/msi-rtx-5050-8g-ventus-2x-8-gb-148249940/?c=750000000,2026-11-23
+designer,Power Supply,MSI MAG A850GL PCIE5,59760,https://kaspi.kz/shop/p/msi-mag-a850gl-pcie5-white-850-vt-118935541/?c=750000000,2026-11-23
+designer,Case,Zalman S2,13203,Zalman S2,2026-11-23
+designer,Monitor,"ASUS ProArt PA278QV 27"" 1440p 100% sRGB",188750,https://kaspi.kz/shop/p/27-asus-proart-pa278qv-chernyi-100687741/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_car_motorcycle_gear_v2&gclid=CjwKCAiA5Y_YBhBbEiwAK5Dl7SlNEIsIhJpAtuI7G1JGMw3S3SiZvFxw4NRbFkwtnVxF17aIEWD50hoCUyYQAvD_BwE,
+designer,OS,Windows 11 Pro,60000,https://kaspi.kz/shop/p/microsoft-windows-11-pro-64-bit-144883085/?c=750000000,
+designer,TOTAL,,=SUM(D32:D41),,
+ALL,GRAND TOTAL,,=D11+D21+D31+D42,,
